@@ -18,7 +18,7 @@ public class Tiket {
 
     // Menampilkan detail tiket
     public void tampilkanTiket() {
-        System.out.println("\n=== Detail Tiket ===");
+        System.out.println("=== Detail Tiket ===");
         System.out.println("Nomor Tiket   : " + nomorTiket);
         System.out.println("Nama Penonton : " + namaPenonton);
         System.out.println("Film          : " + film.getJudul());
