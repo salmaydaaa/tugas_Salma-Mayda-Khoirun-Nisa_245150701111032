@@ -5,14 +5,14 @@ public class Studio {
     private int kapasitasKursi;
     private Film film; // Film yang ditayangkan di studio
 
-    // Constructor
+    
     public Studio(int nomorStudio, int kapasitasKursi, Film film) {
         this.nomorStudio = nomorStudio;
         this.kapasitasKursi = kapasitasKursi;
         this.film = film;
     }
 
-    // Getter Methods
+
     public int getNomorStudio() {
         return nomorStudio;
     }
@@ -25,7 +25,7 @@ public class Studio {
         return film;
     }
 
-    // Menampilkan informasi studio
+   
     public void tampilkanInfo() {
         System.out.println("Studio       : " + nomorStudio);
         System.out.println("Kapasitas    : " + kapasitasKursi + " kursi");
