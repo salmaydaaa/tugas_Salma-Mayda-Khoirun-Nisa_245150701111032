@@ -1,36 +1,19 @@
-package Praktikum;
-
-public class Studio {
-    private int nomorStudio;
-    private int kapasitasKursi;
-    private Film film; // Film yang ditayangkan di studio
-
+ class Studio {
+        int nomorStudio;
+        int jumlahKursi;
+        Film1 film;
     
-    public Studio(int nomorStudio, int kapasitasKursi, Film film) {
-        this.nomorStudio = nomorStudio;
-        this.kapasitasKursi = kapasitasKursi;
-        this.film = film;
+        public Studio(int nomorStudio, int jumlahKursi, Film1 film) {
+            this.nomorStudio = nomorStudio;
+            this.jumlahKursi = jumlahKursi;
+            this.film = film;
+        }
+    
+        public void tampilkanInfo() {
+            System.out.println("Studio       : " + nomorStudio);
+            System.out.println("Jumlah Kursi    : " + jumlahKursi+ " kursi");
+            System.out.println("Film yang sedang tayang:");
+            film.tampilkanInfo();
+            System.out.println("-------------------------------");
+        }
     }
-
-
-    public int getNomorStudio() {
-        return nomorStudio;
-    }
-
-    public int getKapasitasKursi() {
-        return kapasitasKursi;
-    }
-
-    public Film getFilm() {
-        return film;
-    }
-
-   
-    public void tampilkanInfo() {
-        System.out.println("Studio       : " + nomorStudio);
-        System.out.println("Kapasitas    : " + kapasitasKursi + " kursi");
-        System.out.println("Film yang tayang:");
-        film.tampilkanInfo();
-        System.out.println("-------------------------------");
-    }
-}
