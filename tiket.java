@@ -1,14 +1,11 @@
-package Praktikum;
+class Tiket1 {
+    String nomorTiket;
+    Film1 film;
+    Studio studio;
+    int nomorKursi;
+    String namaPenonton;
 
-public class Tiket {
-    private String nomorTiket;
-    private Film film;
-    private Studio studio;
-    private int nomorKursi;
-    private String namaPenonton;
-
-  
-    public Tiket(String nomorTiket, Film film, Studio studio, int nomorKursi, String namaPenonton) {
+    public Tiket1(String nomorTiket, Film1 film, Studio studio, int nomorKursi, String namaPenonton) {
         this.nomorTiket = nomorTiket;
         this.film = film;
         this.studio = studio;
@@ -16,15 +13,14 @@ public class Tiket {
         this.namaPenonton = namaPenonton;
     }
 
-    
     public void tampilkanTiket() {
-        System.out.println("=== Detail Tiket ===");
+        System.out.println("\n=== Detail Tiket ===");
         System.out.println("Nomor Tiket   : " + nomorTiket);
         System.out.println("Nama Penonton : " + namaPenonton);
-        System.out.println("Film          : " + film.getJudul());
-        System.out.println("Studio        : " + studio.getNomorStudio());
+        System.out.println("Film          : " + film.judul);
+        System.out.println("Studio        : " + studio.nomorStudio);
         System.out.println("Nomor Kursi   : " + nomorKursi);
-        System.out.println("Harga Tiket   : " + film.getHargaTiket());
+        System.out.println("Harga Tiket   : " + film.hargaTiket);
         System.out.println("=======================");
-    }
 }
+}                                                        
