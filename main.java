@@ -1,18 +1,17 @@
-package Praktikum;
-
 import java.util.Scanner;
-
-public class Main {
+public class main {
     public static void main(String[] args) {
-      
-        Film film1 = new Film("Film A", "Romance", "10:00", 50000);
-        Film film2 = new Film("Film B", "Horor", "12:00", 60000);
-        Film film3 = new Film("Film C", "Comedy", "14:00", 55000);
+        
+        Film1 film1 = new Film1("Film A", "Romance", "10:00", 50000);
+        Film1 film2 = new Film1("Film B", "Horor", "12:00", 60000);
+        Film1 film3 = new Film1("Film C", "Comedy", "14:00", 55000);
 
+        
         Studio studio1 = new Studio(1, 100, film1);
         Studio studio2 = new Studio(2, 130, film2);
         Studio studio3 = new Studio(3, 105, film3);
 
+        
         System.out.println("=== Jadwal Film di Bioskop ABC ===");
         studio1.tampilkanInfo();
         studio2.tampilkanInfo();
@@ -20,7 +19,7 @@ public class Main {
 
         Scanner input = new Scanner(System.in);
 
-
+        
         System.out.print("Masukkan Nomor Tiket: ");
         String nomorTiket = input.nextLine();
 
@@ -33,7 +32,8 @@ public class Main {
         System.out.print("Masukkan Nomor Kursi: ");
         int nomorKursi = input.nextInt();
 
-        Studio studioPilih = null;
+        
+        Studio studioPilih;
         if (pilihanStudio == 1) {
             studioPilih = studio1;
         } else if (pilihanStudio == 2) {
@@ -46,8 +46,12 @@ public class Main {
             return;
         }
 
-        Tiket tiket = new Tiket(nomorTiket, studioPilih.getFilm(), studioPilih, nomorKursi, namaPenonton);
+        
+        Tiket1 tiket = new Tiket1(nomorTiket, studioPilih.film, studioPilih, nomorKursi, namaPenonton);
 
+
+
+        
         tiket.tampilkanTiket();
 
         input.close();
