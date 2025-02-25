@@ -7,7 +7,7 @@ public class Tiket {
     private int nomorKursi;
     private String namaPenonton;
 
-    // Constructor
+  
     public Tiket(String nomorTiket, Film film, Studio studio, int nomorKursi, String namaPenonton) {
         this.nomorTiket = nomorTiket;
         this.film = film;
@@ -16,7 +16,7 @@ public class Tiket {
         this.namaPenonton = namaPenonton;
     }
 
-    // Menampilkan detail tiket
+    
     public void tampilkanTiket() {
         System.out.println("=== Detail Tiket ===");
         System.out.println("Nomor Tiket   : " + nomorTiket);
